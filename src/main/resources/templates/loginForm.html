@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>로그인</title>
+</head>
+<body>
+    <h1>로그인 페이지</h1>
+    <form action="/login" method="POST">
+        <!--
+        시큐리티에서 로그인시,
+        아이디 name = username, 비밀번호 name = password가 default
+        하지만 SecurityConfig에서 변경 가능함.
+        -->
+        <input type="text" name="id" placeholder="아이디"><br>
+        <input type="password" name="password" placeholder="비밀번호"><br>
+        <button>로그인</button>
+    </form>
+    <a href="/joinForm">회원가입</a>
+</body>
+</html>
